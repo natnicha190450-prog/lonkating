@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>คืนเพ็ญ • ลอยกระทงออนไลน์ | วิทยาลัยเทคนิคท่าหลวงซิเมนต์ไทยอนุสรณ์</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600&display=swap');
+:root{--gold:#f6d58b;--gold2:#c99445;--ink:#142b38;--muted:#9db3bd;--glass:rgba(13,35,49,.78);--line:rgba(255,255,255,.13);--pink:#f5a9bc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#071b29;color:#fff7e9;font-family:Kanit,sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}
+.topbar{height:74px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,5vw,72px);position:absolute;z-index:5;top:0;left:0;right:0;border-bottom:1px solid #ffffff1b;background:linear-gradient(#061723aa,transparent)}
+.logo{font-size:17px;letter-spacing:1.4px;color:var(--gold);font-weight:600}.logo small{display:block;color:#d6e0df;font-size:10px;letter-spacing:.2px;font-weight:300}
+.pill{border:1px solid #ffffff35;border-radius:99px;background:#ffffff12;color:#fff;padding:8px 15px}
+.hero{min-height:680px;height:100vh;max-height:900px;position:relative;display:grid;place-items:center;text-align:center;overflow:hidden;background:radial-gradient(ellipse at 50% 60%,#275d68 0,#123a4d 38%,#091e31 75%,#061522 100%)}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#06152233 0%,transparent 45%,#071b29 100%)}
+.moon{position:absolute;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff9d7,#e7c77e 65%,#d49a51);box-shadow:0 0 50px #f5d78c99,0 0 130px #f5d78c55;top:13%;left:calc(50% - 75px)}
+.starfield{position:absolute;inset:0;background-image:radial-gradient(2px 2px at 10% 20%,#fff 50%,transparent 60%),radial-gradient(1px 1px at 80% 15%,#fff 50%,transparent 60%),radial-gradient(2px 2px at 65% 32%,#fff 50%,transparent 60%),radial-gradient(1px 1px at 22% 45%,#fff 50%,transparent 60%),radial-gradient(1px 1px at 92% 52%,#fff 50%,transparent 60%),radial-gradient(2px 2px at 42% 12%,#fff 50%,transparent 60%);opacity:.65}
+.temple{position:absolute;bottom:23%;left:0;right:0;height:160px;opacity:.45;background:linear-gradient(135deg,transparent 0 8%,#081a25 8% 10%,transparent 10% 14%,#081a25 14% 18%,transparent 18%),linear-gradient(180deg,transparent 0 45%,#071824 45%);clip-path:polygon(0 65%,8% 55%,14% 60%,20% 20%,24% 58%,32% 52%,39% 25%,44% 58%,54% 55%,62% 10%,68% 58%,78% 45%,84% 20%,90% 58%,100% 50%,100% 100%,0 100%)}
+.hero-copy{position:relative;z-index:2;padding:90px 20px 30px;max-width:850px}.kicker{letter-spacing:4px;font-size:12px;color:var(--gold);text-transform:uppercase}.hero h1{font-size:clamp(42px,7vw,82px);line-height:1.14;margin:17px 0 12px;text-shadow:0 5px 25px #0007}.hero p{color:#e1e8e6;line-height:1.9;font-weight:300}.gold-btn{border:0;border-radius:99px;padding:14px 28px;background:linear-gradient(120deg,#ffe9b1,#d6a14f);color:#382811;font-weight:600;box-shadow:0 8px 28px #d6a14f44;transition:.2s}.gold-btn:hover{transform:translateY(-2px);box-shadow:0 12px 32px #d6a14f66}.hero .gold-btn{margin-top:18px}
+.live-stats{display:flex;justify-content:center;gap:12px;margin-top:35px;flex-wrap:wrap}.stat{padding:11px 23px;border:1px solid #ffffff26;background:#071b29a8;border-radius:15px;min-width:130px;backdrop-filter:blur(8px)}.stat b{display:block;color:var(--gold);font-size:22px}.stat span{font-size:11px;color:#d3dfdf}
+.riverline{position:absolute;bottom:0;left:-10%;width:120%;height:26%;background:repeating-linear-gradient(174deg,#7bc3c422 0 2px,transparent 2px 18px),linear-gradient(180deg,#174354,#092536);border-radius:50% 50% 0 0/12% 12% 0 0}
+.lotus-float{position:absolute;bottom:8%;font-size:28px;opacity:.85;animation:drift 18s linear infinite}.lf1{left:-5%}.lf2{left:25%;bottom:14%;animation-delay:-7s}.lf3{left:65%;bottom:6%;animation-delay:-13s}
+@keyframes drift{from{transform:translateX(-5vw) rotate(-8deg)}to{transform:translateX(110vw) rotate(8deg)}}
+main{max-width:1160px;margin:auto;padding:65px 22px 80px}.section-title{margin-bottom:25px}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:2.5px}.section-title h2{font-size:31px;margin:4px 0;color:#fff1cf}.section-title p{margin:0;color:var(--muted);font-size:14px}
+.creator{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr);gap:22px;align-items:start}.glass{background:linear-gradient(145deg,#17394aeb,#0c2638f2);border:1px solid var(--line);border-radius:23px;padding:24px;box-shadow:0 18px 45px #0003}
+.field{margin-bottom:15px}.field label{display:block;font-size:13px;color:#f2dba9;margin-bottom:7px}.field input,.field textarea,.field select{width:100%;border:1px solid #ffffff25;background:#081f2e;color:white;border-radius:12px;padding:12px 13px;outline:none}.field textarea{min-height:86px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--gold)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.group-label{font-size:13px;color:#f2dba9;margin:17px 0 9px}.options{display:flex;flex-wrap:wrap;gap:8px}.opt{background:#ffffff0b;border:1px solid #ffffff27;color:#eaf0ec;padding:8px 12px;border-radius:12px;font-size:13px;transition:.18s}.opt:hover{border-color:#f6d58b99}.opt.selected{background:#f4d18a;color:#352812;border-color:#f4d18a;box-shadow:0 4px 15px #e3b35d35}
+.preview-card{position:sticky;top:22px}.preview-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:13px}.preview-top b{color:#f9e5b6}.preview-top span{font-size:11px;color:#a9c0c7}
+.preview-stage{height:360px;border-radius:17px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 65%,#317786,#17475d 45%,#0a263c 80%)}.preview-stage:before{content:"";position:absolute;inset:0;background-image:radial-gradient(2px 2px at 20% 20%,#fff 50%,transparent 70%),radial-gradient(1px 1px at 80% 30%,#fff 50%,transparent 70%),radial-gradient(2px 2px at 70% 12%,#fff 50%,transparent 70%);opacity:.7}.preview-moon{position:absolute;top:28px;right:40px;width:64px;height:64px;border-radius:50%;background:#ffe6a5;box-shadow:0 0 35px #ffe6a599}.preview-water{position:absolute;bottom:0;height:42%;width:130%;left:-15%;border-radius:50% 50% 0 0;background:repeating-linear-gradient(175deg,#a3e4df24 0 2px,transparent 2px 14px),linear-gradient(#246478,#0b3449)}
+.krathong-art{position:absolute;z-index:2;left:50%;top:58%;transform:translate(-50%,-50%);width:220px;height:170px;display:grid;place-items:center;filter:drop-shadow(0 0 20px #ffc66a88)}
+.krathong-base{position:absolute;font-size:116px;line-height:1}.flower-ring{position:absolute;top:8px;left:0;right:0;display:flex;justify-content:center;gap:0;flex-wrap:wrap;font-size:31px;filter:drop-shadow(0 0 5px #ffda8c)}.candle{position:absolute;top:55px;font-size:33px;filter:drop-shadow(0 0 12px #ffca58)}
+.preview-caption{text-align:center;margin-top:13px;color:#c0d1d3;font-size:12px;line-height:1.7}
+.step-footer{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:20px}.hint{font-size:11px;color:#9fb5bd}
+.decor-note{font-size:12px;color:#9db3bd;margin-top:9px}
+.hidden{display:none!important}
+#floatingPage{min-height:100vh;display:none;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 30%,#254e70,#0b263f 60%,#061724)}#floatingPage.show{display:block}
+.float-header{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;padding:22px clamp(16px,5vw,70px)}.float-scene{height:calc(100vh - 80px);min-height:600px;position:relative;overflow:hidden}.float-moon{position:absolute;top:6%;left:calc(50% - 75px);width:150px;height:150px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff6d5,#e8c477 70%);box-shadow:0 0 70px #f8dc9d99,0 0 180px #f8dc9d55}
+.float-stars{position:absolute;inset:0;background-image:radial-gradient(2px 2px at 8% 12%,white 50%,transparent 60%),radial-gradient(1px 1px at 22% 30%,white 50%,transparent 60%),radial-gradient(2px 2px at 85% 20%,white 50%,transparent 60%),radial-gradient(1px 1px at 74% 45%,white 50%,transparent 60%),radial-gradient(2px 2px at 48% 16%,white 50%,transparent 60%),radial-gradient(1px 1px at 92% 55%,white 50%,transparent 60%);opacity:.75}
+.far-shore{position:absolute;bottom:38%;left:0;right:0;height:130px;background:#081d2c;clip-path:polygon(0 75%,10% 56%,17% 63%,22% 15%,27% 62%,37% 55%,43% 28%,49% 60%,60% 48%,68% 8%,73% 60%,83% 50%,90% 22%,95% 61%,100% 53%,100% 100%,0 100%)}
+.floating-water{position:absolute;bottom:0;left:-10%;width:120%;height:43%;background:repeating-linear-gradient(174deg,#8ed3d022 0 2px,transparent 2px 20px),linear-gradient(180deg,#1d596b,#09283d);border-radius:50% 50% 0 0/8% 8% 0 0;box-shadow:0 -20px 70px #5eb8b633}
+.landing-krathong{position:absolute;z-index:2;top:55%;left:-260px;width:250px;height:200px;display:grid;place-items:center;animation:sail 17s ease-in-out forwards;filter:drop-shadow(0 0 24px #ffd277aa)}
+.landing-krathong .base{font-size:145px}.landing-krathong .flowers{position:absolute;top:10px;left:0;right:0;text-align:center;font-size:38px;white-space:nowrap}.landing-krathong .flame{position:absolute;top:55px;font-size:35px}
+@keyframes sail{0%{left:-260px;top:52%;transform:rotate(-3deg)}45%{top:56%;transform:rotate(2deg)}100%{left:calc(50% - 125px);top:55%;transform:rotate(0)}}
+.wish-ticket{position:absolute;z-index:4;bottom:35px;left:50%;transform:translateX(-50%);width:min(520px,calc(100% - 32px));text-align:center;padding:19px 23px;background:#071c2bd9;border:1px solid #f4d18a66;border-radius:20px;backdrop-filter:blur(12px);box-shadow:0 15px 50px #0005}.wish-ticket .label{color:var(--gold);font-size:10px;letter-spacing:2px}.wish-ticket h2{margin:4px 0;color:#fff0c8;font-size:21px}.wish-ticket p{margin:5px 0 10px;font-weight:300;color:#e3e8e5;line-height:1.7}.wish-ticket small{color:#9fb8bf}
+.action-row{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:13px}.outline-btn{background:#ffffff12;color:white;border:1px solid #ffffff42;border-radius:99px;padding:10px 17px}
+.toast{position:fixed;z-index:20;bottom:20px;left:50%;transform:translateX(-50%);background:#f6d58b;color:#352812;padding:11px 20px;border-radius:99px;display:none;box-shadow:0 6px 25px #0005}
+@media(max-width:820px){.creator{grid-template-columns:1fr}.preview-card{position:static;grid-row:1}.preview-stage{height:290px}.hero{min-height:720px}.moon{top:14%}}
+@media(max-width:520px){.two{grid-template-columns:1fr}.glass{padding:18px}.section-title h2{font-size:26px}.topbar{height:65px}.logo{font-size:14px}.float-header{padding:15px}.float-scene{min-height:650px}.wish-ticket{bottom:20px}.landing-krathong{animation-duration:13s}}
+</style></head>
+<body>
+<div id="homePage">
+<header class="hero">
+ <div class="topbar"><div class="logo">คืนเพ็ญ <small>LOY KRATHONG FESTIVAL • วิทยาลัยเทคนิคท่าหลวงซิเมนต์ไทยอนุสรณ์</small></div><button class="pill" onclick="document.getElementById('creator').scrollIntoView({behavior:'smooth'})">สร้างกระทงของฉัน ↗</button></div>
+ <div class="starfield"></div><div class="moon"></div><div class="temple"></div><div class="riverline"></div><span class="lotus-float lf1">🪷</span><span class="lotus-float lf2">🌸</span><span class="lotus-float lf3">🪷</span>
+ <div class="hero-copy"><div class="kicker">A MAGICAL THAI FULL MOON NIGHT</div><h1>คืนเพ็ญ<br><span style="color:var(--gold)">มหัศจรรย์ลอยกระทง</span></h1><p>แต่งแต้มกระทงด้วยดอกไม้นานาพรรณ<br>เขียนคำอธิษฐาน แล้วปล่อยความปรารถนาให้ล่องลอยไปกับสายน้ำ</p><button class="gold-btn" onclick="document.getElementById('creator').scrollIntoView({behavior:'smooth'})">เริ่มตกแต่งกระทง <span>✦</span></button>
+ <div class="live-stats"><div class="stat"><b id="total">0</b><span>กระทงที่ลอยแล้ว</span></div><div class="stat"><b id="lanternTotal">0</b><span>โคมอธิษฐาน</span></div><div class="stat"><b id="deptTotal">0</b><span>แผนกวิชาที่ร่วมงาน</span></div></div></div>
+</header>
+<main>
+<section id="creator">
+ <div class="section-title"><div class="eyebrow">CREATE YOUR OWN KRATHONG</div><h2>ออกแบบกระทงในแบบของคุณ</h2><p>เลือกฐานกระทง จัดดอกไม้ และเติมแสงเทียนให้สวยงามตามจินตนาการ</p></div>
+ <div class="creator">
+  <div class="glass">
+   <div class="two"><div class="field"><label>ชื่อผู้ลอยกระทง</label><input id="name" placeholder="ชื่อของคุณ"></div><div class="field"><label>แผนกวิชา</label><select id="dept"><option value="">เลือกแผนกวิชา</option><option>เทคคอม (เทคโนโลยีคอมพิวเตอร์)</option><option>เทคโนโลยีสารสนเทศ</option><option>ช่างไฟฟ้ากำลัง</option><option>ช่างยนต์</option><option>ช่างกลโรงงาน</option><option>การบัญชี</option><option>การตลาด</option><option>แผนกวิชาอื่น ๆ</option></select></div></div>
+   <div class="field"><label>คำอธิษฐานของคุณ</label><textarea id="wish" placeholder="ขอให้ปีนี้เต็มไปด้วยความสุข ความสำเร็จ และสิ่งดี ๆ ..."></textarea></div>
+   <div class="field"><label>แนบรูปภาพบนกระทง (ไม่บังคับ)</label><input id="photo" type="file" accept="image/*"></div>
+   <div class="group-label">01 / เลือกฐานกระทง</div><div class="options" id="bases">
+    <button class="opt selected" data-emoji="🪷">🪷 บัวหลวง</button><button class="opt" data-emoji="🌺">🌺 กลีบบัวชมพู</button><button class="opt" data-emoji="🌼">🌼 ใบตองทอง</button><button class="opt" data-emoji="🌸">🌸 ดอกพุดซ้อน</button><button class="opt" data-emoji="💐">💐 พวงมาลัย</button>
+   </div>
+   <div class="group-label">02 / เลือกดอกไม้ประดับ <span class="hint">เลือกได้หลายชนิด</span></div>
+   <div class="options" id="flowers">
+    <button class="opt selected" data-emoji="🌸">🌸 ซากุระ</button><button class="opt selected" data-emoji="🌼">🌼 ดาวเรือง</button><button class="opt" data-emoji="🌺">🌺 ชบา</button><button class="opt" data-emoji="🌷">🌷 ทิวลิป</button><button class="opt" data-emoji="🌹">🌹 กุหลาบ</button><button class="opt" data-emoji="🪻">🪻 ไฮยาซินธ์</button><button class="opt" data-emoji="🪷">🪷 ดอกบัว</button><button class="opt" data-emoji="💮">💮 ดอกพุด</button><button class="opt" data-emoji="🏵️">🏵️ เบญจมาศ</button><button class="opt" data-emoji="🌻">🌻 ทานตะวัน</button><button class="opt" data-emoji="💐">💐 ช่อดอกไม้</button><button class="opt" data-emoji="🍀">🍀 ใบโคลเวอร์</button><button class="opt" data-emoji="🌿">🌿 ใบไม้</button><button class="opt" data-emoji="🌱">🌱 ยอดอ่อน</button>
+   </div>
+   <div class="group-label">03 / เครื่องประดับและแสงเทียน</div>
+   <div class="options" id="extras"><button class="opt selected" data-emoji="🕯️">🕯️ เทียน</button><button class="opt" data-emoji="🪔">🪔 ธูป</button><button class="opt" data-emoji="✨">✨ กลิตเตอร์</button><button class="opt" data-emoji="💛">💛 ไข่มุกทอง</button><button class="opt" data-emoji="🎀">🎀 ริบบิ้น</button><button class="opt" data-emoji="💎">💎 คริสตัล</button><button class="opt" data-emoji="🦋">🦋 ผีเสื้อ</button><button class="opt" data-emoji="🌟">🌟 ดาวทอง</button></div>
+   <div class="group-label">04 / เลือกสถานที่ลอย</div><div class="field"><select id="place"><option>สายน้ำในวิทยาลัย</option><option>แม่น้ำเจ้าพระยา • กรุงเทพฯ</option><option>แม่น้ำป่าสัก • อยุธยา</option><option>แม่น้ำปิง • เชียงใหม่</option><option>โอ่งหรืออ่างน้ำที่บ้าน</option></select></div>
+   <div class="step-footer"><span class="hint">✦ กระทงของคุณจะปรากฏบนหน้าแม่น้ำหลังยืนยัน</span><button class="gold-btn" onclick="launchKrathong()">ยืนยันและลอยกระทง →</button></div>
+  </div>
+  <div class="glass preview-card"><div class="preview-top"><b>LIVE PREVIEW</b><span>ตัวอย่างกระทงของคุณ</span></div>
+   <div class="preview-stage"><div class="preview-moon"></div><div class="preview-water"></div><div class="krathong-art"><div class="krathong-base" id="previewBase">🪷</div><div class="flower-ring" id="previewFlowers">🌸 🌼 🌸 🌼</div><div class="candle">🕯️</div></div></div>
+   <div class="preview-caption"><div id="previewExtras" style="font-size:25px;margin-bottom:5px">🕯️</div><span id="flowerCount">เลือกดอกไม้แล้ว 2 ชนิด</span><br>ทุกดอกไม้ที่เลือกจะถูกนำไปตกแต่งบนกระทงในฉากลอยจริง</div>
+  </div>
+ </div>
+</section>
+</main>
+<footer style="text-align:center;color:#8fa9b4;border-top:1px solid #ffffff16;padding:25px;font-size:12px">🌕 คืนเพ็ญ • มหัศจรรย์ลอยกระทงออนไลน์<br>วิทยาลัยเทคนิคท่าหลวงซิเมนต์ไทยอนุสรณ์</footer>
+</div>
+<section id="floatingPage">
+ <div class="float-header"><div class="logo">คืนเพ็ญ <small>YOUR KRATHONG IS ON THE RIVER</small></div><button class="pill" onclick="backToEdit()">← กลับไปตกแต่ง</button></div>
+ <div class="float-scene"><div class="float-stars"></div><div class="float-moon"></div><div class="far-shore"></div><div class="floating-water"></div>
+  <div class="landing-krathong" id="landingKrathong"><div class="base" id="landBase">🪷</div><div class="flowers" id="landFlowers">🌸 🌼 🌸 🌼</div><div class="flame">🕯️</div></div>
+  <div class="wish-ticket"><div class="label">A WISH UPON THE MOON</div><h2 id="landName">กระทงของคุณกำลังลอยไป</h2><p id="landWish">ขอให้คำอธิษฐานทุกประการเป็นจริง</p><small id="landMeta">สายน้ำในวิทยาลัย</small><div class="action-row"><button class="outline-btn" onclick="backToEdit()">ตกแต่งกระทงอีกครั้ง</button><button class="gold-btn" onclick="newKrathong()">สร้างกระทงอีกใบ ✦</button></div></div>
+ </div>
+</section>
+<div class="toast" id="toast"></div>
+<script>
+const $=id=>document.getElementById(id);let base='🪷',flowers=['🌸','🌼'],extras=['🕯️'],lastEntry=null;
+function bindMulti(id,callback){$(id).querySelectorAll('.opt').forEach(btn=>btn.addEventListener('click',()=>{if(id==='bases'){$(id).querySelectorAll('.opt').forEach(x=>x.classList.remove('selected'));btn.classList.add('selected');base=btn.dataset.emoji}else{btn.classList.toggle('selected');const arr=[...$(id).querySelectorAll('.opt.selected')].map(x=>x.dataset.emoji);if(id==='flowers')flowers=arr;else extras=arr}updatePreview();if(callback)callback()}))}
+function updatePreview(){$('previewBase').textContent=base;$('previewFlowers').textContent=flowers.length?flowers.join(' '):'🌿';$('previewExtras').textContent=extras.join(' ')||'ไม่เลือกเครื่องประดับ';$('flowerCount').textContent=`เลือกดอกไม้แล้ว ${flowers.length} ชนิด • เครื่องประดับ ${extras.length} รายการ`}
+bindMulti('bases');bindMulti('flowers');bindMulti('extras');updatePreview();
+function toast(msg){$('toast').textContent=msg;$('toast').style.display='block';setTimeout(()=>$('toast').style.display='none',2600)}
+function launchKrathong(){const name=$('name').value.trim(),wish=$('wish').value.trim();if(!name||!wish){toast('กรุณากรอกชื่อและคำอธิษฐานก่อนนะ');return}lastEntry={name,dept:$('dept').value||'ไม่ระบุแผนก',wish,place:$('place').value,base,flowers:[...flowers],extras:[...extras],date:new Date().toLocaleString('th-TH')};let all=JSON.parse(localStorage.getItem('moon_krathongs')||'[]');all.unshift(lastEntry);localStorage.setItem('moon_krathongs',JSON.stringify(all));renderStats();showFloating()}
+function showFloating(){$('landBase').textContent=lastEntry.base;$('landFlowers').textContent=lastEntry.flowers.length?lastEntry.flowers.join(' '):'🌿';$('landName').textContent=lastEntry.name+' • '+lastEntry.dept;$('landWish').textContent='“'+lastEntry.wish+'”';$('landMeta').textContent=lastEntry.place+' • '+lastEntry.date;$('homePage').style.display='none';$('floatingPage').classList.add('show');$('landingKrathong').style.animation='none';void $('landingKrathong').offsetWidth;$('landingKrathong').style.animation='sail 17s ease-in-out forwards';window.scrollTo(0,0)}
+function backToEdit(){$('floatingPage').classList.remove('show');$('homePage').style.display='block';$('creator').scrollIntoView({behavior:'smooth'});window.scrollTo({top:$('creator').offsetTop-10,behavior:'smooth'})}
+function newKrathong(){$('name').value='';$('wish').value='';$('photo').value='';flowers=['🌸','🌼'];extras=['🕯️'];$('flowers').querySelectorAll('.opt').forEach((b,i)=>b.classList.toggle('selected',i<2));$('extras').querySelectorAll('.opt').forEach((b,i)=>b.classList.toggle('selected',i===0));updatePreview();backToEdit()}
+function renderStats(){const all=JSON.parse(localStorage.getItem('moon_krathongs')||'[]');$('total').textContent=all.length;$('lanternTotal').textContent='0';$('deptTotal').textContent=new Set(all.map(x=>x.dept).filter(x=>x!=='ไม่ระบุแผนก')).size}
+renderStats();
+</script>
+</body></html>
